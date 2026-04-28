@@ -34,9 +34,6 @@ class MultiTracking:
         return self.initialized
 
     def update_tracker(self, frame):
-        # if not self.initialized:
-        #     return False, []
-
         success, boxes = self.multi_tracker.update(frame)
         self.tracked_boxes = []
 
