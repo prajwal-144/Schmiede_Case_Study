@@ -1,1 +1,1 @@
-# Schmiede_Case_Study
+# Schmiede Case Study
