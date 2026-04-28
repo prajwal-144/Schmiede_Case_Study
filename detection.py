@@ -64,7 +64,7 @@ class YOLOv3Detection:
         self.detections = []
         if len(indices) > 0:
             for i in indices.flatten():
-                label = (self.class_names[class_ids[i]]if class_ids[i] < len(self.class_names) else "unknown")
+                label = (self.class_names[class_ids[i]] if class_ids[i] < len(self.class_names) else "unknown")
                 self.detections.append(
                     {
                         "bbox": boxes[i],  # [x, y, w, h]
