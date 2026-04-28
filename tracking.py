@@ -46,5 +46,5 @@ class MultiTracking:
     def draw_tracks(self, frame):
         for i, (x, y, w, h) in enumerate(self.tracked_boxes):
             cv2.rectangle(frame, (x, y), (x + w, y + h), (255, 0, 0), 2)
-            cv2.putText(frame,f"ID_{i}",(x, max(20, y - 10)),cv2.FONT_HERSHEY_SIMPLEX,0.5,(255, 0, 0), 2)
+            cv2.putText(frame,f"ID_{i}", (x, max(20, y - 10)), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 0, 0), 2)
         return frame
